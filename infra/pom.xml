@@ -9,7 +9,8 @@
         <version>0.1</version>
     </parent>
     <properties>
-        <cdk.version>1.118.0</cdk.version>
+        <cdk.version>2.136.0</cdk.version>
+        <constructs.version>[10.0.0,11.0.0)</constructs.version>
     </properties>
     <build>
         <plugins>
@@ -27,13 +28,13 @@
         <!-- AWS Cloud Development Kit -->
         <dependency>
             <groupId>software.amazon.awscdk</groupId>
-            <artifactId>core</artifactId>
+            <artifactId>aws-cdk-lib</artifactId>
             <version>${cdk.version}</version>
         </dependency>
         <dependency>
-            <groupId>software.amazon.awscdk</groupId>
-            <artifactId>lambda</artifactId>
-            <version>${cdk.version}</version>
+            <groupId>software.constructs</groupId>
+            <artifactId>constructs</artifactId>
+            <version>${constructs.version}</version>
         </dependency>
     </dependencies>
 </project>
