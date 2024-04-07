@@ -33,7 +33,6 @@ public class Stack extends software.amazon.awscdk.core.Stack {
                 .layers(Arrays.asList(layer))
                 .memorySize(1024)
                 .timeout(Duration.seconds(30))
-                .logRetention(RetentionDays.ONE_WEEK)
                 .build());
     }
 
