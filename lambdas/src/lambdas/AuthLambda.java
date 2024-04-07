@@ -14,6 +14,6 @@ public class AuthLambda implements RequestHandler<Map<String, String>, String> {
         System.out.println(msg);
         Map<String, String> response = Map.of("message", "Hello from Java Lambda!");
 
-        return "Hello from lambda";
+        return "Hello from lambda_2";
     }
 }
